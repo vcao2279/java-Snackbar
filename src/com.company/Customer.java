@@ -34,9 +34,9 @@ public class Customer
         return cash;
     }
 
-    public void buySnack(double cost)
+    public void buySnack(int quantity, Snack snack)
     {
-        this.cash -= cost;
+        this.cash -= snack.sellSnack(quantity);
     }
 
     @Override

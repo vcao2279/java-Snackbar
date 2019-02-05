@@ -17,12 +17,17 @@ public class Main {
         Snack water = new Snack("Water", 20,2.75, drinkVendingMachine.getId());
 
         System.out.println("**Jane buys 3 soda**");
-        jane.buySnack(soda.sellSnack(3));
+        jane.buySnack(3, soda);
 
         System.out.println("**Jane buys 1 pretzel**");
-        jane.buySnack(pretzel.sellSnack(1));
+        jane.buySnack(1, pretzel);
 
-        System.out.println("**Jane buys 1 soda**");
-        bob.buySnack(soda.sellSnack(2));
+        System.out.println("**Bob buys 1 soda**");
+        bob.buySnack(2, soda);
+
+        System.out.println(jane);
+        System.out.println(bob);
+        System.out.println(soda);
+        System.out.println(pretzel);
     }
 }
